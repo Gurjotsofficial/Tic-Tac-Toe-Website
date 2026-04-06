@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Libertinus+Keyboard&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: rgb(109, 207, 207);
+    color: black;
+    height: 55px;       
+    font-size: 30px;
+    font-family:  "Libertinus Keyboard", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    font-size: 34px;
+}
+.gamecontainer{
+    /* background-color: aquamarine; */
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 7vw;
+    cursor: pointer;
+}
+
+.br0{
+    border-right: 0 ;
+}
+.bl0{
+    border-left: 0 ;
+}
+.bb0{
+    border-bottom: 0 ;
+}
+.bt0{
+    border-top: 0 ;
+}
+
+.box:hover{
+    background-color: rgb(210, 187, 232);
+}
+.gif{
+    width: 0px;
+    height: 0px;
+}
+
+#reset{
+    background-color: rgb(176, 239, 255);
+    font-size: 24px;
+    font-family: serif;
+    /* font-size: 12px; */
+    padding: 5px;
+    margin-left: 16px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 950px)
+{
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .container{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+
+    }
+    .boxtext{
+        font-size: 45px;
+    }
+    .gameinfo h1{
+        margin-top: 15px;
+        font-size: 2.5rem;    
+    }
+  
+}
+
+.line{
+    /* background-color: #60c1c1; */
+    background-color: #000000;
+    height: 3px;
+    width: 0vw;
+    position: absolute;
+    transition: 1s ease-in-out;
+    
+    /* transform: translate(5vw,5vw) rotate(0deg); */
+}
+.gif img{
+    height: 0px;
+    transition: 1s ease-in-out;
+}
