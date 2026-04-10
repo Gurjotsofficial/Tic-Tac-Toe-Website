@@ -98,7 +98,11 @@ nav {
     }
   
 }
-
+@media screen and (max-width : 1000px){
+    .line{
+        display: none;
+    }
+}
 .line{
     /* background-color: #60c1c1; */
     background-color: #000000;
@@ -108,7 +112,9 @@ nav {
     transition: 1s ease-in-out;
     
     /* transform: translate(5vw,5vw) rotate(0deg); */
+/* } */
 }
+
 .gif img{
     height: 0px;
     transition: 1s ease-in-out;
